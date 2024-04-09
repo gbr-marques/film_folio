@@ -1,0 +1,17 @@
+@import '../../styles/utils.css';
+
+.home {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media (max-width: 1400px) {
+
+    .home {
+        padding: 2rem 0rem;
+        gap: 1.5rem;
+    }
+    
+}

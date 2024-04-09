@@ -1,0 +1,35 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.rodape p span {
+    color: var(--vermelho);
+    font-weight: 800;
+}
+
+.rodape__link {
+    padding: 0.5em 1rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    transition: 400ms;
+}
+
+.rodape__link:hover {
+    background-color: #ffffff1c;
+    transition: 400ms;
+}
+
+.rodape__link__icone {
+    vertical-align: middle;
+    padding-bottom: 3px;
+    padding-right: 0.4rem;
+}

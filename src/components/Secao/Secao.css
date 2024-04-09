@@ -1,0 +1,60 @@
+@import '../../styles/utils.css';
+@import '../../styles/botao.css';
+
+
+.secao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    --mask: linear-gradient(to right, 
+      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 85%, 
+      rgba(0,0,0, 0) 100%, rgba(201, 201, 201, 0) 0
+  ) 100% 50% / 100% 100% repeat-x; 
+    -webkit-mask: var(--mask); 
+    mask: var(--mask);
+    transition: all 1s ease;
+}
+
+.secao__cabecalho {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.secao ul {
+    height: fit-content;
+    display: flex;
+    gap: 1.25rem;
+    padding-bottom: 1rem;
+    background: transparent;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    transition: background-color .8s;
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    transition: 1s;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: inherit;
+    transition: 1s;
+}
+
+.secao:hover ::-webkit-scrollbar{
+    background-color: rgb(51, 51, 51);
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.secao:hover ::-webkit-scrollbar-thumb{
+    background-color: rgb(104, 104, 104);
+    border: 4px solid rgb(51, 51, 51);
+    border-radius: 1rem;
+    margin: 3px;
+    width: 2px;
+    transition: all 1s ease;
+    transition: 1s;
+}

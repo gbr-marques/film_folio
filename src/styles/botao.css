@@ -1,0 +1,49 @@
+
+
+.MuiToggleButton-sizeSmall {
+     /* border-color: rgb(116, 116, 116) !important; */
+     background: #3b3b3b !important;
+     height: 2rem;
+     width: fit-content !important;
+     text-transform: initial !important;
+     font-size: 0.9rem !important;
+}
+
+
+
+.Mui-selected {
+    color: white !important;
+    font-weight: 600 !important;
+    background: var(--vermelho) !important;
+}
+
+.botao__grupo:focus {
+    border: grey;
+}
+
+.secao .botao {
+    font-family: "Inter", sans-serif !important;
+    color: white;
+    font-weight: 200;
+    outline: var(--vermelho);
+    padding: 0rem 1rem;
+    border-left: 1px solid rgb(116, 116, 116) !important;
+    border-right: 1px solid rgb(116, 116, 116) !important;
+}
+
+.botao:first-child {
+    border-left: none !important;
+}
+
+
+.botao:last-child {
+    border-right: none !important;
+}
+
+@media (max-width: 1400px) {
+        
+    .MuiToggleButton-sizeSmall {
+        font-size: 0.65rem !important;
+    }
+
+}

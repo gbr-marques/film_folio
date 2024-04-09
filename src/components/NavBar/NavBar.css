@@ -1,0 +1,117 @@
+@import '../../styles/utils.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20%;
+    color: white;
+    position: relative;
+}
+
+.nav__pesquisa {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    width: 400px;
+    height: 44px;
+    left: calc(50% - 440px/2);
+    top: 64px;
+    background: linear-gradient(270deg, #1E1E1E 0%, #2E2E2E 100%);
+    outline: none;
+    border: 1px solid var(--vermelho);
+    outline: none;
+    border-radius: 12px;
+    transition: 500ms;
+    color: white;
+    padding: 0rem 1rem;
+}
+
+.nav__pesquisa:focus {
+    height: 44px;
+    width: 600px;
+    transition: 500ms;
+    border: 1px solid var(--vermelho);
+    outline: none;
+    padding: 0rem 1rem;
+}
+
+.nav__pesquisa::placeholder {
+    transition: 500ms;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: rgb(145, 145, 145);
+    font-size: 1rem;
+}
+
+.nav__pesquisa:focus::placeholder {
+    color: transparent;
+    transition: 500ms;
+}
+
+
+.nav__perfil {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav_git {
+    display: flex;
+    gap: 0.75rem;
+    text-wrap: nowrap;
+}
+
+.git_logo {
+    color: var(--vermelho);
+}
+
+.res_container {
+    position: absolute;
+    box-sizing: content-box;
+    margin-left: 0.25rem;
+    top: 60px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (max-width: 1400px) {
+
+    .nav {
+        justify-content: space-between;
+        gap: 1rem
+    }
+
+    .nav img {
+        height: 1.75rem;
+    }
+
+    .nav__pesquisa {
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .nav__pesquisa::placeholder {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .nac__perfil h2 {
+        font-size: 1.5rem;
+    }
+
+    .t2 {
+        font-size: 16rem;
+    }
+
+    .res_container {
+        left: calc(50% - (490px/2));
+        width: 500px;
+        padding-right: 0.5rem;
+    }
+
+}

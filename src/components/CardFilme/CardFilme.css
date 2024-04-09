@@ -1,0 +1,120 @@
+@import '../../styles/utils.css';
+
+.card_filme {
+    background: linear-gradient(125deg,rgb(51, 51, 51), rgb(22, 22, 22)) padding-box,
+              linear-gradient(to bottom, var(--vermelho), var(--vermelho-escuro)) border-box;
+    border-radius: 1em;
+    border: 1px solid transparent;
+
+    min-width: 240px;
+    max-width: 240px;
+    height: 100%;
+    list-style: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    /* box-shadow: var(--sombra-padrao); */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.5rem;
+    position: relative;
+    transition: 400ms;
+    -webkit-transition: 400ms;          
+}
+
+.card_filme:hover {
+    background: linear-gradient(125deg,rgb(70, 70, 70), rgb(39, 39, 39)) padding-box,
+              linear-gradient(to bottom, var(--vermelho), var(--vermelho-escuro)) border-box;
+    -webkit-transition: 400ms;          
+}
+
+.card_filme:hover .botao_favorito {
+    opacity: 100%;       
+    transition: 400ms;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card_filme:last-child a:last-child{
+    margin-right: 8rem;
+}
+
+.card_filme img {
+    max-width: 100%;
+    border-radius: 0.25rem;
+    display: flex;
+}
+
+.card_filme h1 {
+    word-wrap: break-word;
+}
+
+.progresso {
+    width: 50px;
+    position: absolute;
+    margin: 0.5rem;
+    right: 14px;
+    top: 260px;
+}
+
+.progresso text {
+    max-width: 30px;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700;
+}
+
+.botao_favorito {
+    position: absolute;
+    left: 1.5rem;
+    top: 285px;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    opacity: 100%;
+    transition: 400ms;
+}
+
+.botao_favorito:hover {
+    background-color: rgb(211, 74, 74);
+}
+
+.botao_favorito svg {
+    color: white;
+}
+
+.botao_favorito:hover svg {
+    color: #292929;
+}
+
+.botao_favorito svg {
+    color: white;
+}
+
+@media (max-width: 1400px) {
+     
+    .card_filme {
+        max-width: 200px;
+        min-width: 200px;
+    }
+
+    .card_filme h1 {
+        font-size: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .progresso text {
+        line-height: 0.8 !important;
+    }
+
+    .progresso {
+        top: 260px;
+    }
+
+}
