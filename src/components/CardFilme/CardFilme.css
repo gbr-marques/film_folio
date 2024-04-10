@@ -45,6 +45,7 @@ a {
     max-width: 100%;
     border-radius: 0.25rem;
     display: flex;
+    position: relative;
 }
 
 .card_filme h1 {
@@ -114,7 +115,7 @@ a {
     }
 
     .progresso {
-        top: 260px;
+        top: 200px;
     }
 
 }
